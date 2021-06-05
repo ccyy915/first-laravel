@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::post('/hw/plus', 'App\Http\Controllers\Api\firstController@plus');
+
+Route::apiResource('tasks', 'App\Http\Controllers\Api\TaskController');
