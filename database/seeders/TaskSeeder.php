@@ -19,6 +19,5 @@ class TaskSeeder extends Seeder
         Task::truncate();
         // 生成新生資料
         Task::factory()->times(100)->create();
-        
     }
 }

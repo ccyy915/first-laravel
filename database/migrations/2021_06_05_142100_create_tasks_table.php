@@ -17,7 +17,7 @@ class CreateTasksTable extends Migration
             $table->id();
             $table->string('title', 100);
             $table->integer('salary')->default(0);
-            $table->text('desc')->nullable();
+            $table->text('desc')->nullable(); // 可以為空值
             $table->boolean('enabled')->default(true);
             $table->timestamps();
         });
